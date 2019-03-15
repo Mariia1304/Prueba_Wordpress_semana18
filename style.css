@@ -1,0 +1,43 @@
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+h2 {
+    text-align: center;
+}
+​h4 {
+    text-align: center;
+    color: white;
+}
+.card-body h5, .card-body p {
+    text-align: center;
+}
+#antipastos .card {
+    width: 24%;
+    margin: 5px;
+}
+#ensaladas .card {
+    width: 32%;
+    margin: 5px;
+}
+#sopas .card {
+    width: 45%;
+    margin: 5px;
+}
+@media (max-width: 667px) {
+    #ensaladas .card, #antipastos .card, #sopas .card {
+        width: 100%;
+        margin: 5px;
+    }
+    /* Estos estilos solo se aplicarán hasta el tamaño indicado */
+}
+@media (min-width: 667px) and (max-width: 1090px) {
+    #antipastos .card, #ensaladas .card {
+        width: 45%;
+        margin: 5px;
+    }
+    /* Solo se aplicarán entre los tamaños indicados */
+}
+/*@media (min-width: 577px) and (max-width:700px) {}*/
