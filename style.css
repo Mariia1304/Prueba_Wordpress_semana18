@@ -1,43 +1,148 @@
-img.logo {
+body {
+    background-image: url('assets/background.png');
+}
+img#logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
+    width: 50%;
 }
-h2 {
+h1 {
     text-align: center;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    color: white;
 }
 ​h4 {
     text-align: center;
     color: white;
 }
+#menu-select h1 {
+    padding: 1.2em;
+    background-color: black;
+}
+#menu-select ul {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: white;
+    list-style: none;
+    background-color: #CC1924;
+}
+#menu-select ul li {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    font-size: 1.4em;
+}
+#menu-select ul li a:hover {
+    color: white;
+}
+#menu-select ul li a {
+    color: white;
+}
+@media (max-width: 576px) {
+    #cena, #oliva {
+        display: none;
+    }
+    #menu-select ul li {
+        font-size: 1.3em;
+    }
+    #menu-select h1 {
+        font-size: 1.5em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    #oliva, #cena {
+        display: none;
+    }
+    #menu-select ul li {
+        font-size: .9em;
+    }
+    #menu-select h1 {
+        padding: .6em;
+        font-size: 1.7em;
+    }
+}
+@media (min-width: 769px) and (max-width:992px) {
+    #menu-select ul li {
+        font-size: .9em;
+    }
+    #menu-select h1 {
+        padding: .6em;
+        font-size: 1.7em;
+    }
+}
 .card-body h5, .card-body p {
     text-align: center;
 }
-#antipastos .card {
+.card-body h5 {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+.card-body p {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #707070;
+    font-size: 1.2em;
+}
+p.price {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: black;
+    font-size: 1.5em;
+}
+#antipastos .card, #pizza_trad .card, #ensaladas .card, #sopas .card, #pizzas .card, #postres .card, #infusiones .card, #bebidas .card {
     width: 24%;
     margin: 5px;
 }
-#ensaladas .card {
-    width: 32%;
-    margin: 5px;
-}
-#sopas .card {
-    width: 45%;
-    margin: 5px;
-}
-@media (max-width: 667px) {
-    #ensaladas .card, #antipastos .card, #sopas .card {
+@media (max-width: 576px) {
+    #ensaladas .card, #antipastos .card, #sopas .card, #pizza_trad .card, #pizzas .card, #postres .card, #infusiones .card, #bebidas .card {
         width: 100%;
         margin: 5px;
     }
     /* Estos estilos solo se aplicarán hasta el tamaño indicado */
 }
-@media (min-width: 667px) and (max-width: 1090px) {
-    #antipastos .card, #ensaladas .card {
+@media (min-width: 577px) and (max-width: 768px) {
+    #antipastos .card, #ensaladas .card, #sopas .card, #pizza_trad .card, #pizzas .card, #postres .card, #infusiones .card, #bebidas .card {
         width: 45%;
         margin: 5px;
     }
-    /* Solo se aplicarán entre los tamaños indicados */
 }
+@media (min-width: 769px) and (max-width: 992px) {
+    #antipastos .card, #ensaladas .card, #sopas .card, #pizza_trad .card, #pizzas .card, #postres .card, #infusiones .card, #bebidas .card {
+        width: 31.5%;
+        margin: 5px;
+    }
+}
+/*#antipastos, #pizza_trad, #pizzas, #ensaladas, #sopas, #postres, #infusiones, #bebidas {
+    display: none;
+}*/
+
 /*@media (min-width: 577px) and (max-width:700px) {}*/
+
+/*Footer*/
+
+.page-footer {
+    background-color: black;
+    color: white
+}
+.page-footer h5 {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+.page-footer p {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
