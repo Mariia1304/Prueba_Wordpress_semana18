@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    // $('#menu-items li').children(this).addClass('sliding-link');
     // Add smooth scrolling to all links
     $(".sliding-link").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior
@@ -18,3 +19,6 @@ $(document).ready(function() {
         } // End if
     });
 });
+// $(document).ready(function() {
+//     $('#menu-mi-menu li').addClass('nav__item').children(this).addClass('nav__link scrolly');;
+// });
