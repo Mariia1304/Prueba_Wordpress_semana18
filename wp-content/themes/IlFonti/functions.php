@@ -3,7 +3,7 @@
 
 	add_action( 'wp_enqueue_scripts', function() {
 
-		wp_deregister_script('jquery');
+		// wp_deregister_script('jquery');
 
 	    //Enqueue Style
 	    

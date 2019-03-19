@@ -336,12 +336,13 @@
                 </div>
             </section>
         </div>
+       
         <div id="reserva_de_mesa">
             <button id="reservar">
                 DESEA RESERVAR LA MESA?
             </button>
-            <div id="form" class="display col-md-6 mx-auto" >
-            <?php echo do_shortcode('[contact-form-7 id="121" title="Reservar la mesa"]'); ?>
+            <div id="form"  class="display mx-auto" >
+           <?php the_field('booking_calendar'); ?>
             </div>
         </div>
         <?php  get_footer(); ?>
