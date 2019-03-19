@@ -2,7 +2,7 @@
     <body>
         <?php
           $custom_logo_id = get_theme_mod( 'custom_logo' );
-          $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+          $logo = wp_get_attachment_image_src( $custom_logo_id , 'large' );
         ?>
         <header>
             <a class="" href="http://mariiache.freshwork.cl">
@@ -12,12 +12,12 @@
         <div class="carousel slide wow fadeIn" data-ride="carousel" data-wow-delay=".2s" id="carouselExampleInterval" style="margin-top: 20px;">
             <div class="carousel-inner">
                <div class="carousel-item active" data-interval="5000">
-                    <img alt="..." class="d-inline w-50" src="<?php echo the_field('foto1');?>" style="float: left;"/>
-                    <img alt="..." class="d-inline w-50" src="<?php echo the_field('foto2');?>" style="float: left;"/>
+                    <img alt="" class="d-inline w-50" src="<?php echo get_field('foto1')['sizes']['slider'];?>" style="float: left;"/>
+                    <img alt="" class="d-inline w-50" src="<?php echo get_field('foto2')['sizes']['slider'];?>" style="float: left;"/>
                 </div>
                 <div class="carousel-item" data-interval="2000">
-                    <img alt="..." class="d-inline w-50" src="<?php echo the_field('foto3');?>" style="float: left;"/>
-                    <img alt="..." class="d-inline w-50" src="<?php echo the_field('foto4');?>"/>
+                    <img alt="" class="d-inline w-50" src="<?php echo  get_field('foto3')['sizes']['slider'];?>" style="float: left;"/>
+                    <img alt="" class="d-inline w-50" src="<?php echo  get_field('foto4')['sizes']['slider'];?>"/>
                 </div>
             </div>
             <a class="carousel-control-prev" data-slide="prev" href="#carouselExampleInterval" role="button">
@@ -76,7 +76,9 @@
                 $price_plate1 = get_sub_field('price_plato1');
                 ?>
                     <div class="card">
-                        <img alt="..." class="card-img-top" src="<?php echo $img_plate1['url']; ?>"/>
+                        <div class="card-img">
+                        <img alt="..." class="card-img-top" src="<?php echo $img_plate1['sizes']['medium']; ?>"/>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">
                              <?php echo $name_plate1; ?> 
@@ -108,7 +110,9 @@
                 $price_plate2 = get_sub_field('price_plato2');
                 ?>
                     <div class="card">
-                        <img alt="..." class="card-img-top" src="<?php echo $img_plate2['url']; ?>"/>
+                        <div class="card-img">
+                        <img alt="" class="card-img-top" src="<?php echo $img_plate2['sizes']['medium']; ?>"/>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">
                              <?php echo $name_plate2; ?> 
@@ -141,7 +145,9 @@
                 $price_plate3 = get_sub_field('price_plato3');
                 ?>
                     <div class="card">
-                        <img alt="..." class="card-img-top" src="<?php echo $img_plate3['url']; ?>"/>
+                        <div class="card-img">
+                        <img alt="" class="card-img-top" src="<?php echo $img_plate3['sizes']['medium']; ?>"/>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">
                              <?php echo $name_plate3; ?> 
@@ -174,7 +180,9 @@
                 $price_plate4 = get_sub_field('price_plato4');
                 ?>
                     <div class="card">
-                        <img alt="..." class="card-img-top" src="<?php echo $img_plate4['url']; ?>"/>
+                        <div class="card-img">
+                        <img alt="" class="card-img-top" src="<?php echo $img_plate4['sizes']['medium']; ?>"/>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">
                              <?php echo $name_plate4; ?> 
@@ -206,7 +214,9 @@
                 $price_plate5 = get_sub_field('price_plato5');
                 ?>
                     <div class="card">
-                        <img alt="..." class="card-img-top" src="<?php echo $img_plate5['url']; ?>"/>
+                        <div class="card-img">
+                        <img alt="" class="card-img-top" src="<?php echo $img_plate5['sizes']['medium']; ?>"/>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">
                              <?php echo $name_plate5; ?> 
@@ -238,7 +248,9 @@
                 $price_plate6 = get_sub_field('price_plato6');
                 ?>
                     <div class="card">
-                        <img alt="..." class="card-img-top" src="<?php echo $img_plate6['url']; ?>"/>
+                        <div class="card-img">
+                        <img alt="" class="card-img-top" src="<?php echo $img_plate6['sizes']['medium']; ?>"/>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">
                              <?php echo $name_plate6; ?> 
@@ -270,7 +282,9 @@
                 $price_plate7 = get_sub_field('price_plato7');
                 ?>
                     <div class="card">
-                        <img alt="..." class="card-img-top" src="<?php echo $img_plate7['url']; ?>"/>
+                        <div class="card-img">
+                        <img alt="" class="card-img-top" src="<?php echo $img_plate7['sizes']['medium']; ?>"/>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">
                              <?php echo $name_plate7; ?> 
@@ -302,7 +316,9 @@
                 $price_plate8 = get_sub_field('price_plato8');
                 ?>
                     <div class="card">
-                        <img alt="..." class="card-img-top" src="<?php echo $img_plate8['url']; ?>"/>
+                        <div class="card-img">
+                        <img alt="" class="card-img-top" src="<?php echo $img_plate8['sizes']['medium']; ?>"/>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">
                              <?php echo $name_plate8; ?> 

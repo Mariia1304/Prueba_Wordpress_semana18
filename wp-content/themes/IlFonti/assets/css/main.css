@@ -189,6 +189,10 @@ label {
         font-size: 1.3em;
     }
 }
+.card-img {
+    height: 200px;
+    overflow: hidden;
+}
 /*.button__reserva:focus {
     outline: none;
 }*/

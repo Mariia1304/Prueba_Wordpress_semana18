@@ -100,7 +100,7 @@
     "pgcache.configuration_overloaded": false,
     "pgcache.enabled": "1",
     "pgcache.comment_cookie_ttl": 1800,
-    "pgcache.debug": false,
+    "pgcache.debug": "0",
     "pgcache.engine": "file_generic",
     "pgcache.file.gc": 3600,
     "pgcache.file.nfs": false,

@@ -43,3 +43,25 @@
 	));
 	}
 	add_action( 'after_setup_theme', 'config_custom_logo' );
+
+
+//tamaños de fotos
+
+  function thumbnails_setup() {
+    add_theme_support( 'post-thumbnails' );
+  }
+
+
+  function image_sizes( $sizes ) {
+    $add_sizes = array(
+      'slider'		=> __( 'Tamaño de las imágenes del slider' )
+      
+    );
+    return array_merge( $sizes, $add_sizes );
+  }
+  if ( function_exists( 'add_theme_support' ) ) {
+    add_image_size( 'slider', 630, 420, true );
+   
+    add_filter( 'image_size_names_choose', 'image_sizes' );
+  }
+  add_action( 'after_setup_theme', 'thumbnails_setup' );
