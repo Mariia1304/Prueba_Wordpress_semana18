@@ -6,3 +6,6 @@ Como fue:
 
 Despues:
 ![screenshot](screenshots/despues.png)
+
+booking funciona!(pero igual con errores)
+![screenshot](screenshots/booking_func.png)
